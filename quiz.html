@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modsen Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+    <div id="quiz" class="centered">
+        <h1 id="question" class="TITLE"></h1>
+        <form id="choices" class="answ" onsubmit="event.preventDefault();"></form>
+        <button id="submit" class="checkAns">Check the answer</button>
+        <button id="next">Next question</button>
+    </div>
+    <div id="result" class="centered">
+        <h2 class="results">You got <span id="correct"></span> right answers</h2>
+        <button id="restart" class="again">Retry</button>
+    </div>
+</body>
+<script src="./quiz.js"></script>
+</html>
